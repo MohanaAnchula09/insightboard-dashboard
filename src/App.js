@@ -6,16 +6,17 @@ import Header from "./components/Header";
 import Dashboard from "./components/Dashboard";
 import Analytics from "./components/Analytics";
 import Reports from "./components/Reports";
+import "./styles.css";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   return (
     <Router>
-      <div style={{ display: "flex" }}>
+      <div className="app-layout">
         <Sidebar />
 
-        <div style={{ flex: 1 }}>
+        <div className="main-content">
           <Header />
 
           <Routes>

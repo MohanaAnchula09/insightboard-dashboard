@@ -2,6 +2,7 @@ import { salesData } from "../data/data";
 import LineChartComponent from "./charts/LineChartComponent";
 import BarChartComponent from "./charts/BarChartComponent";
 import PieChartComponent from "./charts/PieChartComponent";
+import "../styles.css";
 
 function Dashboard({ selectedCategory, setSelectedCategory }) {
   const filteredData =
@@ -27,7 +28,7 @@ function Dashboard({ selectedCategory, setSelectedCategory }) {
         growth = ((last - prev) / prev) * 100;
       }
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="container">
       <h3>Sales Dashboard</h3>
       <div style={{ marginBottom: "20px" }}>
           <label>Select Category: </label>
@@ -41,32 +42,20 @@ function Dashboard({ selectedCategory, setSelectedCategory }) {
             <option value="Furniture">Furniture</option>
           </select>
         </div>
-      <div style={{
-          background: "#fff",
-          padding: "10px",
-          borderRadius: "10px",
-          flex:"1 1 300px",
-          boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
-        }}> 
-        <div style={{ background: "#fff", padding: "10px" }}>
+      <div className="flex"> 
+        <div className="card">
           <LineChartComponent data={filteredData} />
         </div>
 
-        <div style={{ background: "#fff", padding: "10px" }}>
+        <div className="card">
           <BarChartComponent data={filteredData} />
         </div>
 
-        <div style={{ background: "#fff", padding: "10px" }}>
+        <div className="card">
           <PieChartComponent data={filteredData} />
         </div>
       </div>
-      <div style={{
-            background: "#3498db",
-            color: "white",
-            padding: "20px",
-            borderRadius: "10px",
-            minWidth: "150px"
-          }}>
+      <div className="card">
           <div style={{ background: "#3498db", color: "white", padding: "20px" }}>
             <h4>Total Sales</h4>
             <p>{totalSales}</p>

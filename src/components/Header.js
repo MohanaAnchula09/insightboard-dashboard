@@ -1,9 +1,7 @@
+import "../styles.css"
 function Header() {
     return (
-      <div style={{
-        padding: "15px",
-        background: "#ecf0f1"
-      }}>
+      <div className="header">
         <h2>InsightBoard</h2>
       </div>
     );

@@ -1,62 +1,20 @@
 import { NavLink } from "react-router-dom";
+import "../styles.css";
 
 function Sidebar() {
   return (
-    <div
-      style={{
-        width: "200px",
-        height: "100vh",
-        background: "#2c3e50",
-        color: "white",
-        padding: "20px",
-      }}
-    >
-      <h2>Dashboard</h2>
+    <div className="sidebar">
+      <h2 className="logo">InsightBoard</h2>
 
-      <ul style={{ listStyle: "none", padding: 0 }}>
+      <ul>
         <li>
-          <NavLink
-            to="/"
-            style={({ isActive }) => ({
-              color: "white",
-              textDecoration: "none",
-              display: "block",
-              padding: "10px",
-              background: isActive ? "#34495e" : "transparent",
-            })}
-          >
-            Home
-          </NavLink>
+          <NavLink to="/" className="link">Dashboard</NavLink>
         </li>
-
         <li>
-          <NavLink
-            to="/analytics"
-            style={({ isActive }) => ({
-              color: "white",
-              textDecoration: "none",
-              display: "block",
-              padding: "10px",
-              background: isActive ? "#34495e" : "transparent",
-            })}
-          >
-            Analytics
-          </NavLink>
+          <NavLink to="/analytics" className="link">Analytics</NavLink>
         </li>
-
         <li>
-          <NavLink
-            to="/reports"
-            style={({ isActive }) => ({
-              color: "white",
-              textDecoration: "none",
-              display: "block",
-              padding: "10px",
-              background: isActive ? "#34495e" : "transparent",
-            })}
-          >
-            Reports
-          </NavLink>
+          <NavLink to="/reports" className="link">Reports</NavLink>
         </li>
       </ul>
     </div>

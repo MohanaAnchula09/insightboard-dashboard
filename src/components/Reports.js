@@ -1,4 +1,5 @@
 import { salesData } from "../data/data";
+import "../styles.css";
 
 function Reports({ selectedCategory, setSelectedCategory }) {
   // Filter logic
@@ -31,7 +32,7 @@ function Reports({ selectedCategory, setSelectedCategory }) {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="card">
       <h2>Reports</h2>
 
       {/* 🔽 Filter */}
