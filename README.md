@@ -1,14 +1,98 @@
-# InsightBoard Dashboard
+# InsightBoard – Interactive Data Analytics Dashboard
 
-An interactive data analytics dashboard built using React.
+## Overview
+
+InsightBoard is a modern, responsive data analytics dashboard built using React.
+It transforms raw data into meaningful insights using interactive charts, filters, and tables.
+
+---
+
+## Live Demo
+
+https://MohanaAnchula09.github.io/insightboard-dashboard/
+
+---
+
+## Screenshots
+
+### Dashboard Overview
+<img src="./screenshots/dashboard.png" width="800"/>
+
+### Analytics Section
+<img src="./screenshots/analytics.png" width="800"/>
+
+### Reports Section
+<img src="./screenshots/reports.png" width="800"/>
+
+---
 
 ## Features
-- Dynamic charts (Line, Bar, Pie)
-- Category-based filtering
-- Real-time data updates
-- Responsive UI
+
+* Interactive Dashboard UI
+* Line, Bar, and Pie Charts (Recharts)
+* Dynamic Filters (Category, Region)
+* Data Table with Sorting
+* Fully Responsive Design
+* API/Data Fetching using Axios
+
+---
 
 ## Tech Stack
-- React
-- Recharts
-- JavaScript
+
+* React 
+* Recharts
+* CSS
+
+---
+
+## Key Learnings
+
+* Built reusable React components
+* Implemented dynamic data filtering logic
+* Managed application state using hooks
+* Created responsive UI using CSS media queries
+* Integrated data visualization with Recharts
+
+---
+
+## Project Structure
+
+src/
+├── components/
+├── data/
+├── styles/
+└── App.jsx
+
+---
+
+## Installation & Setup
+
+Clone the repo:
+
+```bash
+git clone https://github.com/MohanaAnchula09/insightboard-dashboard.git
+cd insightboard-dashboard
+npm install
+npm run dev
+```
+
+---
+
+## Future Improvements
+
+* Dark Mode
+* Export to CSV
+* Authentication System
+* Real-time API Integration
+
+---
+
+## Acknowledgements
+
+This project was built as part of improving frontend + data analytics skills.
+
+---
+
+## Contact
+
+Feel free to connect with me on LinkedIn or GitHub!

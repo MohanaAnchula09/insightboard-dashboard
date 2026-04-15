@@ -26,11 +26,6 @@ body {
     min-width: 200px;
   }
   
-  .card:hover {
-    transform: translateY(-3px);
-    transition: 0.2s;
-  }
-  
   
   .container {
     padding: 20px;
