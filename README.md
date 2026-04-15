@@ -16,15 +16,15 @@ https://MohanaAnchula09.github.io/insightboard-dashboard/
 ## Screenshots
 
 ### Dashboard Overview
-![Dashboard](screenshots/dashboard%20Medium.png)
+![Dashboard](screenshots/dashboard-medium.png)
 
 ### Analytics Section
 
-![Analytics](screenshots/analytics%20Medium.png)
+![Analytics](screenshots/analytics-medium.png)
 
 ### Reports Section
 
-![Reports](screenshots/reports%20Medium.png)
+![Reports](screenshots/reports-medium.png)
 
 ---
 
